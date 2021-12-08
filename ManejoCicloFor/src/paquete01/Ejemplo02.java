@@ -5,6 +5,8 @@
  */
 package paquete01;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -15,8 +17,12 @@ public class Ejemplo02 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        for (int i = 1; i <= 10; i+=2) {
+    Scanner entrada = new Scanner(System.in);
+    int limite;
+        System.out.println("Ingresar el límite de la serie que desea imprimir: ");
+        limite = entrada.nextInt();
+        System.out.println("_____________________________________________");
+        for (int i = 1; i <= limite; i+=2) {
             System.out.printf("%d\n", i);
         }
         
